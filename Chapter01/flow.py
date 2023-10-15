@@ -1,7 +1,7 @@
 
 # IF
 
-# In this program, we check if the number is positive or negative or zero and 
+# In this program, we check if the number is positive or negative or zero and
 # display an appropriate message
 
 num = 1
@@ -18,13 +18,13 @@ else:
 numbers = [6, 6, 3, 8, -3, 2, 5, 44, 12]
 sum = 0
 for val in numbers:
-	sum = sum+val
+    sum = sum+val
 
 # Output: The sum is 48
 print("The sum is", sum)
 
 
-#WHILE
+# WHILE
 # Program to add natural numbers upto sum = 1+2+3+...+n
 
 n = 10
@@ -37,4 +37,3 @@ while i <= n:
 
 # print the sum
 print("The sum is", sum)
-
