@@ -1,11 +1,13 @@
 import threading
 import rpdb
 
-#debugger = rpdb.Rpdb(port=4444)
+# debugger = rpdb.Rpdb(port=4444)
 rpdb.Rpdb().set_trace()
 
+
 def my_func(thread_number):
-    return print('my_func called by thread N°{}'.format(thread_number))
+    return print("my_func called by thread N°{}".format(thread_number))
+
 
 def main():
     threads = []
@@ -15,7 +17,6 @@ def main():
         t.start()
         t.join()
 
-if __name__ == "__main__":
 
-   main()
- 
+if __name__ == "__main__":
+    main()

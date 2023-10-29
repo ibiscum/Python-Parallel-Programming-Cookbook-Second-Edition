@@ -30,7 +30,7 @@ print("instance.common ", instance.common)
 print("instance2.common ", instance2.common)
 
 
-class AnotherClass (Myclass):
+class AnotherClass(Myclass):
     # The "self" argument is passed automatically
     # and refers to the class's instance, so you can set
     # instance variables as above, but from within the class.

@@ -10,8 +10,7 @@ if __name__ == "__main__":
     jobs = []
     for i in range(0, procs):
         out_list = list()
-        process = multiprocessing.Process(target=do_something,
-                                          args=(size, out_list))
+        process = multiprocessing.Process(target=do_something, args=(size, out_list))
         jobs.append(process)
 
     for j in jobs:

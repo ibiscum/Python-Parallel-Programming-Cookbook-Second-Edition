@@ -1,8 +1,8 @@
 from numba import guvectorize
 import numpy as np
 
-@guvectorize(['void(int64[:,:], int64[:,:], int64[:,:])'],
-             '(m,n),(n,p)->(m,p)')
+
+@guvectorize(["void(int64[:,:], int64[:,:], int64[:,:])"], "(m,n),(n,p)->(m,p)")
 def matmul(A, B, C):
     m, n = A.shape
     n, p = B.shape
@@ -12,9 +12,10 @@ def matmul(A, B, C):
             for k in range(n):
                 C[i, j] += A[i, k] * B[k, j]
 
+
 dim = 10
-A = np.random.randint(dim,size=(dim, dim))
-B = np.random.randint(dim,size=(dim, dim))
+A = np.random.randint(dim, size=(dim, dim))
+B = np.random.randint(dim, size=(dim, dim))
 
 
 C = matmul(A, B)

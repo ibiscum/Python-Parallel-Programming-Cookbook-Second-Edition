@@ -1,4 +1,3 @@
-
 # IF
 
 # In this program, we check if the number is positive or negative or zero and
@@ -18,7 +17,7 @@ else:
 numbers = [6, 6, 3, 8, -3, 2, 5, 44, 12]
 sum = 0
 for val in numbers:
-    sum = sum+val
+    sum = sum + val
 
 # Output: The sum is 48
 print("The sum is", sum)
@@ -33,7 +32,7 @@ sum = 0
 i = 1
 while i <= n:
     sum = sum + i
-    i = i+1    # update counter
+    i = i + 1  # update counter
 
 # print the sum
 print("The sum is", sum)

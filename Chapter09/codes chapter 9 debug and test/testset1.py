@@ -1,8 +1,7 @@
-#testset.py
+# testset.py
 from nose.tools import eq_
-import unittest	
+import unittest
 
 
 def test_sum():
-    eq_(2+2,4)
-	
+    eq_(2 + 2, 4)
